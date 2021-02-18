@@ -69,5 +69,7 @@ option(FOONATHAN_MEMORY_EXTERN_TEMPLATE
     "whether or not common template instantiations are already provided by the library" ON)
 set(FOONATHAN_MEMORY_TEMPORARY_STACK_MODE 2 CACHE STRING
      "set to 0 to disable the per-thread stack completely, to 1 to disable the nitfy counter and to 2 to enable everything")
-set(FOONATHAN_MEMORY_CONTAINER_NODE_SIZES_IMPL container_node_sizes_impl.hpp CACHE FILEPATH
-     "the path of the header that defines the node sizes and alignments if pre-generated.")
+# set(FOONATHAN_MEMORY_CONTAINER_NODE_SIZES_IMPL container_node_sizes_impl.hpp CACHE FILEPATH
+#      "${CMAKE_SOURCE_DIR}/include/foonathan/memory/detail/container_node_sizes_impl.hpp")
+
+set(FOONATHAN_MEMORY_CONTAINER_NODE_SIZES_IMPL "${CMAKE_SOURCE_DIR}/include/foonathan/memory/detail/container_node_sizes_impl.hpp")
