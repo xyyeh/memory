@@ -76,6 +76,8 @@ set(src
 # configure config file
 configure_file("config.hpp.in" "${CMAKE_CURRENT_BINARY_DIR}/config_impl.hpp")
 
+message(STATUS "----------------------${FOONATHAN_MEMORY_BUILD_TOOLS}")
+
 # generate container_node_sizes.hpp
 # don't run it while cross-compiling and CMAKE_CROSSCOMPILING_EMULATOR is not defined
 if(FOONATHAN_MEMORY_BUILD_TOOLS)
